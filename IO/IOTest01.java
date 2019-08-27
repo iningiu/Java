@@ -26,8 +26,17 @@ public class IOTest01 {
 			int temp ;
 			while((temp=is.read())!=-1) {
 				System.out.println((char)temp);
-			}		
-		
+			}
+//----------------------------------------------------------------			
+			//3、操作 (分段读取)
+// 			byte[] flush = new byte[1024*10]; //缓冲容器
+// 			int len = -1; //接收长度
+// 			while((len=is.read(flush))!=-1) {
+// 				//字节数组-->字符串 (解码)
+// 				String str = new String(flush,0,len);
+// 				System.out.println(str);
+// 			}
+//----------------------------------------------------------------			
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
